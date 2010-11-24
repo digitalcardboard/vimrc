@@ -1,0 +1,4 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/jason/projects/cubnet'
+let g:netrw_dirhist_2='/home/jason/projects/cubweb'
