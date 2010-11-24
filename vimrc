@@ -613,7 +613,9 @@ map <leader>f :MRU<CR>
 let g:CommandTMaxHeight = 15
 set wildignore+=*.o,*.obj,.git,*.pyc
 noremap <leader>j :CommandT<cr>
+noremap <leader>t :CommandT<cr>
 noremap <leader>y :CommandTFlush<cr>
+noremap <C-t> :CommandT<cr>
 
 
 """"""""""""""""""""""""""""""
