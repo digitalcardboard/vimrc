@@ -644,9 +644,9 @@ map <leader>ct :cd ~/Desktop/Todoist/todoist<cr>
 map <leader>cw :cd ~/Desktop/Wedoist/wedoist<cr>
 map <leader>cp :cd ~/Desktop/PlurkGit/trunk<cr>
 
-if MySys() == "mac"
-    if has("gui_running")
-      set fuoptions=maxvert,maxhorz
-      au GUIEnter * set fullscreen
-    endif
-endif
+"if MySys() == "mac"
+"    if has("gui_running")
+"      set fuoptions=maxvert,maxhorz
+"      au GUIEnter * set fullscreen
+"    endif
+"endif

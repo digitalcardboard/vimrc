@@ -3,4 +3,6 @@
 /ruby/command-t/Makefile
 /ruby/command-t/*.so
 /ruby/command-t/*.o
+/ruby/command-t/ext.bundle
 *.swp
+undodir/
