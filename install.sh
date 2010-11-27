@@ -13,4 +13,4 @@ set runtimepath=~/.vim_runtime,~/.vim_runtime/after,\$VIMRUNTIME
 source ~/.vim_runtime/vimrc
 helptags ~/.vim_runtime/doc' > ~/.vimrc
 echo "Installed amix's vim configuration successfully! Enjoy :)"
-echo "To enable the Command-T plugin: cd ~/vim_runtime/ruby/command-t; ruby extconf.rb; make"
+echo "To enable the Command-T plugin: cd ~/.vim_runtime/ruby/command-t; ruby extconf.rb; make"
