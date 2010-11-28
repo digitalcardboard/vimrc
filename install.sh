@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 if [ "$1" == "" ]; then
   echo ""
   echo "Usage to install digitalcardboard/amix's vimrc:"
@@ -6,7 +6,6 @@ if [ "$1" == "" ]; then
   echo "      - where <system> can be 'mac', 'linux' or 'windows'"
   exit 1
 fi
-# TODO fix "[: 8: linux: unexpected operator" message on linux
 echo "
 fun! MySys()
    return \"$1\"
