@@ -6,3 +6,4 @@
 /ruby/command-t/ext.bundle
 *.swp
 undodir/
+.DS_Store
