@@ -107,6 +107,8 @@ set novisualbell
 set t_vb=
 set tm=500
 
+set nu              " I love me some line numbers
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
