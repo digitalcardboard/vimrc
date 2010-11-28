@@ -5,7 +5,7 @@
 " Original Maintainer: amix the lucky stiff
 "                      http://amix.dk - amix@amix.dk
 "
-" Version: 3.7 - 2010/11/27
+" Version: 3.7.1 - 2010/11/27
 "
 " Readme:
 "    https://github.com/digitalcardboard/vimrc/blob/master/README
@@ -36,6 +36,9 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Make Vim behave better
+set nocompatible
+
 " Sets how many lines of history VIM has to remember
 set history=700
 
@@ -75,33 +78,31 @@ endif
 " Set 7 lines to the curors - when moving vertical..
 set so=7
 
-set wildmenu "Turn on WiLd menu
+set wildmenu                        " Turn on Wild menu
 
-set ruler "Always show current position
+set ruler                           " Always show current position
 
-set cmdheight=2 "The commandbar height
+set cmdheight=2                     " The commandbar height
 
-set hid "Change buffer - without saving
+set hid                             " Change buffer - without saving
 
-" Set backspace config
-set backspace=eol,start,indent
+set backspace=eol,start,indent      " Set backspace config
 set whichwrap+=<,>,h,l
 
-set ignorecase "Ignore case when searching
+set ignorecase                      " Ignore case when searching
 set smartcase
 
-set hlsearch "Highlight search things
+set hlsearch                        " Highlight search things
 
-set incsearch "Make search act like search in modern browsers
-set nolazyredraw "Don't redraw while executing macros 
+set incsearch       " Make search act like search in modern browsers
+set nolazyredraw    " Don't redraw while executing macros 
 
-set magic "Set magic on, for regular expressions
+set magic           " Set magic on, for regular expressions
 
-set showmatch "Show matching bracets when text indicator is over them
-set mat=2 "How many tenths of a second to blink
+set showmatch       " Show matching bracets when text indicator is over them
+set mat=2           " How many tenths of a second to blink
 
-" No sound on errors
-set noerrorbells
+set noerrorbells    " No sound on errors
 set novisualbell
 set t_vb=
 set tm=500
@@ -114,7 +115,8 @@ syntax enable "Enable syntax hl
 
 " Set font according to system
 if MySys() == "mac"
-  set gfn=Menlo:h14
+  "set gfn=Menlo:h14
+  set gfn=Monaco:h11
   set shell=/bin/bash
 elseif MySys() == "windows"
   set gfn=Bitstream\ Vera\ Sans\ Mono:h10
@@ -124,17 +126,17 @@ elseif MySys() == "linux"
 endif
 
 if has("gui_running")
-"***  set guioptions-=T
+"***  set guioptions-=T          " keeping the toolbar because i'm a wuss
   set t_Co=256
   set background=dark
   colorscheme peaksea
-  set nonu
+"  set nonu                      " i prefer line numbers
   set lines=50 columns=140
-  set gfn=Monospace\ Regular\ 9 "force font since MySys might not be working
+"  set gfn=Monospace\ Regular\ 9 " force font since MySys might not be working
 else
   colorscheme zellner
   set background=dark
-  set nonu
+"  set nonu
 endif
 
 set encoding=utf8

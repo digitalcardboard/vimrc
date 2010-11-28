@@ -4,7 +4,7 @@ Forked by: Digital Cardboard
 Original Maintainer: amix the lucky stiff
                      http://amix.dk - amix@amix.dk
 
-Version: 3.7 - 2010/11/27
+Version: 3.7.1 - 2010/11/27
 
 Blog_post: 
       http://amix.dk/blog/post/19486#The-ultimate-vim-configuration-vimrc
@@ -57,17 +57,19 @@ Plugins_Included:
 
 
  Revisions:
-    > 3.7: Inital fork and upload to github
-           Moved readme to external file
-           Updated all plugins:
-                minibufexpl     6.3.2   2004-11-18 (but it didn't seem to be installed before)
-                bufexplorer     7.2.8   2010-11-08
-                mru             3.3     2009-12-18
-                vim-fuzzyfinder 4.2.2   2010-09-30 (but may be deprecated in favor of command-t)
-                yankring        11.0    2010-08-12
-                surround        1.90    2010-03-06
-                snipMate        0.83    2009-07-13
-                command-t       1.0     2010-11-26
+    > 3.7.1: Fixed MySys function; general tweaks and personalizations
+    > 3.7.0: Inital fork and upload to github
+             Moved readme to external file
+             Updated all plugins:
+                minibufexpl      6.3.2   2004-11-18 (but it didn't seem to be installed before)
+                bufexplorer      7.2.8   2010-11-08
+                mru              3.3     2009-12-18
+                vim-fuzzyfinder  4.2.2   2010-09-30 (but may be deprecated in favor of command-t)
+                vim-l9           1.1     2010-09-28 (required by vim-fuzzyfinder)
+                yankring         11.0    2010-08-12
+                surround         1.90    2010-03-06
+                snipMate         0.83    2009-07-13
+                command-t        1.0     2010-11-26
     > 3.6: Added lots of stuff (colors, Command-T, Vim 7.3 persistent undo etc.)
     > 3.5: Paste mode is now shown in status line  if you are in paste mode
     > 3.4: Added mru.vim
