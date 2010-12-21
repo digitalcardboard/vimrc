@@ -95,7 +95,8 @@ set smartcase
 set hlsearch                        " Highlight search things
 
 set incsearch       " Make search act like search in modern browsers
-set nolazyredraw    " Don't redraw while executing macros 
+"set nolazyredraw    " Don't redraw while executing macros 
+set lazyredraw      " Don't redraw while executing macros
 
 set magic           " Set magic on, for regular expressions
 
@@ -113,7 +114,7 @@ set nu              " I love me some line numbers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-syntax enable "Enable syntax hl
+syntax enable " Enable syntax highlighting
 
 " Set font according to system
 if MySys() == "mac"
@@ -295,7 +296,7 @@ endfunc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Useful when moving accross long lines
+" Useful when moving accross long lines
 map j gj
 map k gk
 
@@ -395,7 +396,7 @@ function! HasPaste()
 endfunction
 
 " Format the statusline
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L%{GitBranch()}
+"set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L%{GitBranch()}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Parenthesis/bracket expanding
