@@ -4,7 +4,7 @@ Forked by: Digital Cardboard
 Original Maintainer: amix the lucky stiff
                      http://amix.dk - amix@amix.dk
 
-Version: 3.7.2 - 2010/12/08
+Version: 3.7.3 - 2011/01/10
 
 Blog_post: 
       http://amix.dk/blog/post/19486#The-ultimate-vim-configuration-vimrc
@@ -61,6 +61,7 @@ Plugins_Included:
 
 
  Revisions:
+    > 3.7.3 (2011/01/10): Updated command-t plugin to 1.0.1 (released 2011-01-05)
     > 3.7.2 (2010/12/08): Trying out taskpaper.vim for todo list
                 taskpaper        0.5     2010-08-22
     > 3.7.1: Fixed MySys function; general tweaks and personalizations
