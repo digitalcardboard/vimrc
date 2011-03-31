@@ -4,7 +4,7 @@ Forked by: Digital Cardboard
 Original Maintainer: amix the lucky stiff
                      http://amix.dk - amix@amix.dk
 
-Version: 3.7.3 - 2011/01/10
+Version: 3.8.0 - 2011/03/30
 
 Blog_post: 
       http://amix.dk/blog/post/19486#The-ultimate-vim-configuration-vimrc
@@ -26,11 +26,17 @@ How_to_Upgrade:
    $ git pull ~/.vim_runtime
 
 Plugins_Included:
+    > rails.vim - http://www.vim.org/scripts/script.php?script_id=1567
+                  http://github.com/tpope/vim-rails
+      Ruby on Rails: easy file navigation, enhanced syntax highlighting, and more
+          info -> :help rails
+
     > taskpaper.vim - http://www.vim.org/scripts/script.php?script_id=2027 
+                      https://github.com/davidoc/taskpaper.vim
       TaskPaper is a simple to-do list application
           info -> :help taskpaper
 
-    > minibufexpl.vim - http://www.vim.org/scripts/script.php?script_id=159
+    > minibufexpl.vim - https://github.com/fholgado/minibufexpl.vim
       Makes it easy to get an overview of buffers:
           info -> :e ~/.vim_runtime/plugin/minibufexpl.vim
 
@@ -61,6 +67,10 @@ Plugins_Included:
 
 
  Revisions:
+    > 3.8.0 (2011/03/30): taskpaper.vim now on the githubs, pulled from master branch
+                          Switched to fholgado's fork of minibufexpl.vim on github
+                          Updated command-t plugin to 1.1b2 (2011-03-26)
+                          Added vim.rails plugin (4.3, 2010-09-10)
     > 3.7.3 (2011/01/10): Updated command-t plugin to 1.0.1 (released 2011-01-05)
     > 3.7.2 (2010/12/08): Trying out taskpaper.vim for todo list
                 taskpaper        0.5     2010-08-22
