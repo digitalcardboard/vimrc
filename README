@@ -4,7 +4,7 @@ Forked by: Digital Cardboard
 Original Maintainer: amix the lucky stiff
                      http://amix.dk - amix@amix.dk
 
-Version: 3.8.0 - 2011/03/30
+Version: 3.8.1 - 2011/03/30
 
 Blog_post: 
       http://amix.dk/blog/post/19486#The-ultimate-vim-configuration-vimrc
@@ -55,6 +55,7 @@ Plugins_Included:
     > snipMate.vim - http://www.vim.org/scripts/script.php?script_id=2540
       Snippets for many languages (similar to TextMate's):
           info -> :help snipMate
+      Also using snipmate-snippets - https://github.com/scrooloose/snipmate-snippets
 
     > mru.vim - http://www.vim.org/scripts/script.php?script_id=521
       Plugin to manage Most Recently Used (MRU) files:
@@ -67,6 +68,7 @@ Plugins_Included:
 
 
  Revisions:
+    > 3.8.1 (2011/03/30): Updated snipmate-snippets
     > 3.8.0 (2011/03/30): taskpaper.vim now on the githubs, pulled from master branch
                           Switched to fholgado's fork of minibufexpl.vim on github
                           Updated command-t plugin to 1.1b2 (2011-03-26)
