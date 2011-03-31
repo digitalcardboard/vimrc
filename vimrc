@@ -95,7 +95,6 @@ set smartcase
 set hlsearch                        " Highlight search things
 
 set incsearch       " Make search act like search in modern browsers
-"set nolazyredraw    " Don't redraw while executing macros 
 set lazyredraw      " Don't redraw while executing macros
 
 set magic           " Set magic on, for regular expressions
@@ -118,7 +117,6 @@ syntax enable " Enable syntax highlighting
 
 " Set font according to system
 if MySys() == "mac"
-  "set gfn=Menlo:h14
   set gfn=Monaco:h11
   set shell=/bin/bash
 elseif MySys() == "windows"
@@ -133,7 +131,6 @@ if has("gui_running")
   set t_Co=256
   set background=dark
   colorscheme peaksea
-"  set nonu                      " i prefer line numbers
   set lines=50 columns=140
 "  set gfn=Monospace\ Regular\ 9 " force font since MySys might not be working
 else
@@ -324,7 +321,7 @@ map <left> :bp<cr>
 " Tab configuration
 map <leader>tn :tabnew! %<cr>
 map <leader>te :tabedit 
-map <leader>tc :tabclose<cr>
+"map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove 
 
 " When pressing <leader>cd switch to the directory of the open buffer
@@ -477,17 +474,15 @@ map <leader>o :BufExplorer<cr>
 " => Minibuffer plugin
 """"""""""""""""""""""""""""""
 let g:miniBufExplModSelTarget = 1
-let g:miniBufExplorerMoreThanOne = 0
-let g:miniBufExplModSelTarget = 0
+"let g:miniBufExplorerMoreThanOne = 0
 let g:miniBufExplUseSingleClick = 1
 let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplVSplit = 30
-let g:miniBufExplSplitBelow=1
+" let g:miniBufExplVSplit = 30
+" let g:miniBufExplSplitBelow=1
 
 autocmd BufRead,BufNew :call UMiniBufExplorer
 
 map <leader>u :TMiniBufExplorer<cr>
-
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -502,7 +497,7 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 "Pressing ,ss will toggle and untoggle spell checking
 map <leader>ss :setlocal spell!<cr>
 
-"Shortcuts using <leader>
+" Shortcuts using <leader>
 map <leader>sn ]s
 map <leader>sp [s
 map <leader>sa zg
@@ -565,16 +560,18 @@ map <leader>f :MRU<CR>
 """"""""""""""""""""""""""""""
 let g:CommandTMaxHeight = 15
 set wildignore+=*.o,*.obj,.git,*.pyc
-noremap <leader>j :CommandT<cr>
-noremap <leader>t :CommandT<cr>
+"noremap <leader>j :CommandT<cr>
+"conficts with taskpaper mappings
+"noremap <leader>t :CommandT<cr>
 noremap <leader>y :CommandTFlush<cr>
+noremap <C-y> :CommandTFlush<cr>
 noremap <C-t> :CommandT<cr>
 
 
 """"""""""""""""""""""""""""""
 " => Vim grep
 """"""""""""""""""""""""""""""
-let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
+let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated .git'
 set grepprg=/bin/grep\ -nH
 
 
@@ -593,13 +590,3 @@ map <leader>pp :setlocal paste!<cr>
 
 map <leader>bb :cd ..<cr>
 
-map <leader>ct :cd ~/Desktop/Todoist/todoist<cr>
-map <leader>cw :cd ~/Desktop/Wedoist/wedoist<cr>
-map <leader>cp :cd ~/Desktop/PlurkGit/trunk<cr>
-
-"if MySys() == "mac"
-"    if has("gui_running")
-"      set fuoptions=maxvert,maxhorz
-"      au GUIEnter * set fullscreen
-"    endif
-"endif
