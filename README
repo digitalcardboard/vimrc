@@ -4,7 +4,7 @@ Forked by: Digital Cardboard
 Original Maintainer: amix the lucky stiff
                      http://amix.dk - amix@amix.dk
 
-Version: 3.8.1 - 2011/03/30
+Version: 3.8.2 - 2011/06/21
 
 Blog_post: 
       http://amix.dk/blog/post/19486#The-ultimate-vim-configuration-vimrc
@@ -68,6 +68,7 @@ Plugins_Included:
 
 
  Revisions:
+    > 3.8.2 (2011/06/21): Updated command-t to 1.2.1
     > 3.8.1 (2011/03/30): Updated snipmate-snippets
     > 3.8.0 (2011/03/30): taskpaper.vim now on the githubs, pulled from master branch
                           Switched to fholgado's fork of minibufexpl.vim on github
