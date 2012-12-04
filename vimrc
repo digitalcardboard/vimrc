@@ -5,7 +5,7 @@
 " Original Maintainer: amix the lucky stiff
 "                      http://amix.dk - amix@amix.dk
 "
-" Version: 3.7.1 - 2010/11/27
+" Version: 3.9.0 - 2012/12/04
 "
 " Readme:
 "    https://github.com/digitalcardboard/vimrc/blob/master/README
