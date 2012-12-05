@@ -5,12 +5,13 @@
 " Original Maintainer: amix the lucky stiff
 "                      http://amix.dk - amix@amix.dk
 "
-" Version: 3.9.0 - 2012/12/04
+" Version: 4.0.0 - 2012/12/05
 "
 " Readme:
 "    https://github.com/digitalcardboard/vimrc/blob/master/README
 "
 " Sections:
+"    -> Pathogen Setup
 "    -> General
 "    -> VIM user interface
 "    -> Colors and Fonts
@@ -32,6 +33,13 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Pathogen Setup
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" https://github.com/tpope/vim-pathogen
+call pathogen#infect()
+call pathogen#helptags()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General

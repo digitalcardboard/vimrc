@@ -1,0 +1,27 @@
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule "bundle/vim-rails"]
+	path = bundle/vim-rails
+	url = https://github.com/tpope/vim-rails.git
+[submodule "bundle/taskpaper.vim"]
+	path = bundle/taskpaper.vim
+	url = https://github.com/davidoc/taskpaper.vim.git
+[submodule "bundle/minibufexpl.vim"]
+	path = bundle/minibufexpl.vim
+	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "bundle/yankring.vim"]
+	path = bundle/yankring.vim
+	url = https://github.com/vim-scripts/YankRing.vim.git
+[submodule "bundle/bufexplorer"]
+	path = bundle/bufexplorer
+	url = https://github.com/vim-scripts/bufexplorer.zip.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/mru.vim"]
+	path = bundle/mru.vim
+	url = https://github.com/vim-scripts/mru.vim.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = https://github.com/wincent/Command-T.git

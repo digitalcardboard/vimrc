@@ -4,7 +4,7 @@ Forked by: Digital Cardboard
 Original Maintainer: amix the lucky stiff
                      http://amix.dk - amix@amix.dk
 
-Version: 3.9.0 - 2012/12/04
+Version: 4.0.0 - 2012/12/05
 
 Blog_post: 
       http://amix.dk/blog/post/19486#The-ultimate-vim-configuration-vimrc
@@ -28,29 +28,17 @@ How_to_Upgrade:
 Plugins_Included:
     > rails.vim - http://www.vim.org/scripts/script.php?script_id=1567
                   http://github.com/tpope/vim-rails
-        updating:
-            git clone https://github.com/tpope/vim-rails.git vim-rails
-            cd vim-rails
-            rsync -av autoload doc plugin ~/.vim_runtime
       Ruby on Rails: easy file navigation, enhanced syntax highlighting, and more
           info -> :help rails
 
     > taskpaper.vim - http://www.vim.org/scripts/script.php?script_id=2027 
                       https://github.com/davidoc/taskpaper.vim
-        updating:
-            git clone https://github.com/davidoc/taskpaper.vim.git taskpaper.vim
-            cd taskpaper.vim
-            rsync -av autoload doc ftdetect syntax ~/.vim_runtime
       TaskPaper is a simple to-do list application
           info -> :help taskpaper
 
     > minibufexpl.vim - https://github.com/fholgado/minibufexpl.vim
       Makes it easy to get an overview of buffers:
           info -> :e ~/.vim_runtime/plugin/minibufexpl.vim
-        updating:
-            git clone https://github.com/fholgado/minibufexpl.vim.git minibufexpl.vim
-            cd minibufexpl.vim
-            rsync -av doc plugin ~/.vim_runtime
 
     > bufexplorer - http://www.vim.org/scripts/script.php?script_id=42
       Makes it easy to switch between buffers:
@@ -65,10 +53,9 @@ Plugins_Included:
       Makes it easy to work with surrounding text:
           info -> :help surround
 
-    > snipMate.vim - http://www.vim.org/scripts/script.php?script_id=2540
-      Snippets for many languages (similar to TextMate's):
-          info -> :help snipMate
-      Also using snipmate-snippets - https://github.com/scrooloose/snipmate-snippets
+    > UtilSnips - https://github.com/SirVer/ultisnips
+                  http://launchpad.net/ultisnips
+      TextMate-inspired snippets for Vim. Replaces snipMate.vim
 
     > mru.vim - http://www.vim.org/scripts/script.php?script_id=521
                 https://github.com/vim-scripts/mru.vim
@@ -83,6 +70,9 @@ Plugins_Included:
 
 
  Revisions:
+    > 4.0.0 (2012/12/05): Using pathogen to handle vim plugins
+                          Switching from snipmate to utilsnips
+                          Loading all plugins as git submodules in bundle folder
     > 3.9.0 (2012/12/03): Updated taskpaper.vim from github (~v0.7)
                           Updated rails.vim from github (~v4.4)
                           Updated minibufexpl.vim (~v6.4.0)
