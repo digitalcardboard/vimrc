@@ -25,6 +25,10 @@ Installing_Command-T
 How_to_Upgrade:
    $ git pull ~/.vim_runtime
 
+Notes:
+    See http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+        for info on submodules being flagged as dirty
+
 Plugins_Included:
     > rails.vim - http://www.vim.org/scripts/script.php?script_id=1567
                   http://github.com/tpope/vim-rails
