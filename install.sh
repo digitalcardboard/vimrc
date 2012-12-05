@@ -16,5 +16,6 @@ fun! MySys()
 endfun
 set runtimepath=~/.vim_runtime,~/.vim_runtime/after,\$VIMRUNTIME
 source ~/.vim_runtime/vimrc" > ~/.vimrc
+git submodule update --init
 echo "Installed digitalcardboard/amix's vim configuration successfully! Enjoy :)"
 echo "To enable the Command-T plugin: cd ~/.vim_runtime/ruby/command-t; ruby extconf.rb; make"
