@@ -10,11 +10,11 @@ Blog_post:
       http://amix.dk/blog/post/19486#The-ultimate-vim-configuration-vimrc
 
 How_to_Install_on_Unix:
-   $ mkdir ~/.vim_runtime
    $ git clone git://github.com/digitalcardboard/vimrc.git ~/.vim_runtime
-   $ cat ~/.vim_runtime/install.sh
    $ sh ~/.vim_runtime/install.sh <system>
      (<sytem> can be `mac`, `linux` or `windows`)
+   $ cd ~/.vim_runtime
+   $ git submodule update --init
 
 Installing_Command-T
    (run 'rvm use system' first if you use rvm)
@@ -23,7 +23,8 @@ Installing_Command-T
    $ make
 
 How_to_Upgrade:
-   $ git pull ~/.vim_runtime
+   $ cd ~/.vim_runtime
+   $ git pull origin master
 
 Notes:
     See http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
@@ -60,6 +61,8 @@ Plugins_Included:
     > UtilSnips - https://github.com/SirVer/ultisnips
                   http://launchpad.net/ultisnips
       TextMate-inspired snippets for Vim. Replaces snipMate.vim
+          Requires at least python 2.6, on Windows install Python 2.7.3
+            make sure you match x86 Vim w/ x86 Python
 
     > mru.vim - http://www.vim.org/scripts/script.php?script_id=521
                 https://github.com/vim-scripts/mru.vim
