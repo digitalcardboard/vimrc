@@ -59,10 +59,10 @@ nmap <leader>w :w!<cr>
 
 if MySys() == "windows"
     " Fast editing of the .vimrc
-    map <leader>e :e! ~/_vim_runtime/vimrc<cr>
+    map <leader>e :e! ~/.vimrc<cr>
 
     " When vimrc is edited, reload it
-    autocmd! bufwritepost vimrc source ~/_vim_runtime/vimrc
+    autocmd! bufwritepost vimrc source ~/.vimrc
 else
     " Fast editing of the .vimrc
     map <leader>e :e! ~/.vim_runtime/vimrc<cr>
@@ -120,19 +120,18 @@ if MySys() == "mac"
   set gfn=Monaco:h11
   set shell=/bin/bash
 elseif MySys() == "windows"
-  set gfn=Bitstream\ Vera\ Sans\ Mono:h10
+  "set gfn=Bitstream\ Vera\ Sans\ Mono:h10
+  set gfn=Consolas:h9
 elseif MySys() == "linux"
   set gfn=Monospace\ Regular\ 9
   set shell=/bin/bash
 endif
 
 if has("gui_running")
-"***  set guioptions-=T          " keeping the toolbar because i'm a wuss
   set t_Co=256
   set background=dark
   colorscheme peaksea
   set lines=50 columns=140
-"  set gfn=Monospace\ Regular\ 9 " force font since MySys might not be working
 else
   colorscheme zellner
   set background=dark
