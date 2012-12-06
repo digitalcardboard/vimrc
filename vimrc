@@ -102,20 +102,20 @@ set smartcase
 
 set hlsearch                        " Highlight search things
 
-set incsearch       " Make search act like search in modern browsers
-set lazyredraw      " Don't redraw while executing macros
+set incsearch                       " Make search act like search in modern browsers
+set lazyredraw                      " Don't redraw while executing macros
 
-set magic           " Set magic on, for regular expressions
+set magic                           " Set magic on, for regular expressions
 
-set showmatch       " Show matching bracets when text indicator is over them
-set mat=2           " How many tenths of a second to blink
+set showmatch                       " Show matching bracets when text indicator is over them
+set mat=2                           " How many tenths of a second to blink
 
-set noerrorbells    " No sound on errors
+set noerrorbells                    " No sound on errors
 set novisualbell
 set t_vb=
 set tm=500
 
-set nu              " I love me some line numbers
+set nu                              " I love me some line numbers
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -136,6 +136,7 @@ elseif MySys() == "linux"
 endif
 
 if has("gui_running")
+  set guioptions+=T
   set t_Co=256
   set background=dark
   colorscheme peaksea
@@ -158,10 +159,6 @@ set ffs=unix,dos,mac "Default file types
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Turn backup off, since most stuff is in SVN, git anyway...
-"***set nobackup
-"***set nowb
-"***set noswapfile
 
 "Persistent undo
 try
@@ -481,11 +478,8 @@ map <leader>o :BufExplorer<cr>
 " => Minibuffer plugin
 """"""""""""""""""""""""""""""
 let g:miniBufExplModSelTarget = 1
-"let g:miniBufExplorerMoreThanOne = 0
 let g:miniBufExplUseSingleClick = 1
 let g:miniBufExplMapWindowNavVim = 1
-" let g:miniBufExplVSplit = 30
-" let g:miniBufExplSplitBelow=1
 
 autocmd BufRead,BufNew :call UMiniBufExplorer
 
@@ -574,6 +568,10 @@ noremap <leader>y :CommandTFlush<cr>
 noremap <C-y> :CommandTFlush<cr>
 noremap <C-t> :CommandT<cr>
 
+""""""""""""""""""""""""""""""
+" => YankRing
+""""""""""""""""""""""""""""""
+nnoremap <silent> <leader>yr :YRShow<cr>
 
 """"""""""""""""""""""""""""""
 " => Vim grep
