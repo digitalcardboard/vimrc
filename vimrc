@@ -5,7 +5,7 @@
 " Original Maintainer: amix the lucky stiff
 "                      http://amix.dk - amix@amix.dk
 "
-" Version: 4.0.1 - 2012/12/29
+" Version: 4.1.0 - 2013/01/21
 "
 " Readme:
 "    https://github.com/digitalcardboard/vimrc/blob/master/README
@@ -550,23 +550,12 @@ endfunction
 
 
 """"""""""""""""""""""""""""""
-" => MRU plugin
+" => Ctrl-P
 """"""""""""""""""""""""""""""
-let MRU_Max_Entries = 400
-map <leader>f :MRU<CR>
-
-
-""""""""""""""""""""""""""""""
-" => Command-T
-""""""""""""""""""""""""""""""
-let g:CommandTMaxHeight = 15
+noremap <C-t> :CtrlP<cr>
 set wildignore+=*.o,*.obj,.git,*.pyc
-"noremap <leader>j :CommandT<cr>
-"conficts with taskpaper mappings
-"noremap <leader>t :CommandT<cr>
-noremap <leader>y :CommandTFlush<cr>
-noremap <C-y> :CommandTFlush<cr>
-noremap <C-t> :CommandT<cr>
+map <leader>f :CtrlPMRU<cr>
+map <C-y> :CtrlPClearCache
 
 """"""""""""""""""""""""""""""
 " => YankRing

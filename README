@@ -4,7 +4,7 @@ Forked by: Digital Cardboard
 Original Maintainer: amix the lucky stiff
                      http://amix.dk - amix@amix.dk
 
-Version: 4.0.1 - 2012/12/29
+Version: 4.1.0 - 2013/01/21
 
 Blog_post: 
       http://amix.dk/blog/post/19486#The-ultimate-vim-configuration-vimrc
@@ -16,15 +16,10 @@ How_to_Install_on_Unix:
    $ cd ~/.vim_runtime
    $ git submodule update --init
 
-Installing_Command-T
-   (run 'rvm use system' first if you use rvm)
-   $ cd ~/.vim_runtime/ruby/command-t
-   $ ruby extconf.rb
-   $ make
-
 How_to_Upgrade:
    $ cd ~/.vim_runtime
    $ git pull origin master
+   $ git submodule foreach git pull origin master
 
 Notes:
     See http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
@@ -63,20 +58,19 @@ Plugins_Included:
       TextMate-inspired snippets for Vim. Replaces snipMate.vim
           Requires at least python 2.6, on Windows install Python 2.7.3
             make sure you match x86 Vim w/ x86 Python
-
-    > mru.vim - http://www.vim.org/scripts/script.php?script_id=521
-                https://github.com/vim-scripts/mru.vim
-      Plugin to manage Most Recently Used (MRU) files:
-          info -> :e ~/.vim_runtime/plugin/mru.vim
-
-    > Command-T - http://www.vim.org/scripts/script.php?script_id=3025
-                  https://github.com/wincent/Command-T
-      Command-T plug-in provides an extremely fast, intuitive mechanism for opening files:
-          info -> :help CommandT
-          screencast and web-help -> http://amix.dk/blog/post/19501
+        
+    > ctrlp.vim - https://github.com/kien/ctrlp.vim
+      Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
+      Written in pure Vimscript for MacVim, gVim and Vim 7.0+.
+      (replaces mru.vim and Command-T plugins)
 
 
  Revisions:
+    > 4.1.0 (2013/01/21): Plugins updated
+                          Added documentation on how to update manually
+                            from downstream repos
+                          Switching from Command-T to CtrlP
+                          Also replacing mru.vim with CtrlP
     > 4.0.1 (2012/12/29): Updated bufexplorer to v7.2.3@1
                             (don't know why the version number went down)
                           Updated ultisnips
