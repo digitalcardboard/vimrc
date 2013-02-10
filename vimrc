@@ -555,7 +555,7 @@ endfunction
 noremap <C-t> :CtrlP<cr>
 set wildignore+=*.o,*.obj,.git,*.pyc
 map <leader>f :CtrlPMRU<cr>
-map <C-y> :CtrlPClearCache
+map <C-y> :CtrlPClearCache<cr>
 
 """"""""""""""""""""""""""""""
 " => YankRing
